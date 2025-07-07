@@ -1,0 +1,9 @@
+{
+    "build": {
+      "builder": "nixpacks"
+    },
+    "deploy": {
+      "startCommand": "java -jar target/alertas-mongo-1.0.0.jar"
+    }
+  }
+  
