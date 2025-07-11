@@ -32,7 +32,7 @@
     <plugin>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-maven-plugin</artifactId>
-      <version>${spring.boot.version}</version>
+      <version>2.7.18</version>
       <configuration>
         <mainClass>com.example.alertas.Application</mainClass>
       </configuration>
