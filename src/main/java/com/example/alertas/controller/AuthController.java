@@ -15,13 +15,11 @@ public class AuthController {
     private UsuarioRepository usuarioRepository;
 
     @PostMapping("/login")
-    public String login(@RequestBody Usuario credentials) {
-        Optional<Usuario> user = usuarioRepository.findByUsernameAndPassword(
-                credentials.getUsername(),
-                credentials.getPassword()
-        );
+public String login(@RequestBody Usuario usuario) {
+    return usuarioRepository.findByUsernameAndPassword(usuario.getUsername(), usuario.getPassword())
+            .map(user -> "Login OK")
+            .orElse("Credenciales inválidas");
+}
 
-        return user.isPresent() ? "Login OK" : "Credenciales inválidas";
-    }
 }
 
