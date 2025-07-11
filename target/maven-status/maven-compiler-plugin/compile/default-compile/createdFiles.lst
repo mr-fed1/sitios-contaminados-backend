@@ -1,4 +1,7 @@
-com\example\alertas\Application.class
+com\example\alertas\controller\AuthController.class
 com\example\alertas\model\Actuacion.class
 com\example\alertas\repository\ActuacionRepository.class
+com\example\alertas\model\Usuario.class
+com\example\alertas\repository\UsuarioRepository.class
+com\example\alertas\Application.class
 com\example\alertas\controller\ActuacionController.class

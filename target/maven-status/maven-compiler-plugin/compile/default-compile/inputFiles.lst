@@ -1,4 +1,7 @@
 C:\Users\Belu\Desktop\sitios-contaminados-backend\src\main\java\com\example\alertas\Application.java
 C:\Users\Belu\Desktop\sitios-contaminados-backend\src\main\java\com\example\alertas\controller\ActuacionController.java
+C:\Users\Belu\Desktop\sitios-contaminados-backend\src\main\java\com\example\alertas\controller\AuthController.java
 C:\Users\Belu\Desktop\sitios-contaminados-backend\src\main\java\com\example\alertas\model\Actuacion.java
+C:\Users\Belu\Desktop\sitios-contaminados-backend\src\main\java\com\example\alertas\model\Usuario.java
 C:\Users\Belu\Desktop\sitios-contaminados-backend\src\main\java\com\example\alertas\repository\ActuacionRepository.java
+C:\Users\Belu\Desktop\sitios-contaminados-backend\src\main\java\com\example\alertas\repository\UsuarioRepository.java
