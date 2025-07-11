@@ -7,38 +7,32 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/actividad")
 public class ActividadController {
 
     @Autowired
-    private ActividadRepository repository;
+    private ActividadRepository actividadRepository;
 
     @GetMapping
     public List<Actividad> getAll() {
-        return repository.findAll();
-    }
-
-    @GetMapping("/{id}")
-    public Optional<Actividad> getById(@PathVariable String id) {
-        return repository.findById(id);
+        return actividadRepository.findAll();
     }
 
     @PostMapping
     public Actividad create(@RequestBody Actividad actividad) {
-        return repository.save(actividad);
+        return actividadRepository.save(actividad);
     }
 
     @PutMapping("/{id}")
-    public Actividad update(@PathVariable String id, @RequestBody Actividad actividad) {
-        actividad.setId(id);
-        return repository.save(actividad);
+    public Actividad update(@PathVariable String id, @RequestBody Actividad updated) {
+        updated.setId(id);
+        return actividadRepository.save(updated);
     }
 
     @DeleteMapping("/{id}")
     public void delete(@PathVariable String id) {
-        repository.deleteById(id);
+        actividadRepository.deleteById(id);
     }
 }
