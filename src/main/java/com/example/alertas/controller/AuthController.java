@@ -17,11 +17,9 @@ public class AuthController {
     private UsuarioRepository usuarioRepository;
 
  @PostMapping("/login")
-public ResponseEntity<String> login(@RequestBody Usuario usuario) {
-    return usuarioRepository.findByUsernameAndPassword(usuario.getUsername(), usuario.getPassword())
-            .map(user -> ResponseEntity.ok("Login OK"))
-            .orElse(ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Credenciales inválidas"));
+public ResponseEntity<String> login(@RequestBody Map<String, Object> payload) {
+    System.out.println("Payload recibido: " + payload);
+    return ResponseEntity.ok("OK");
 }
-
 }
 
