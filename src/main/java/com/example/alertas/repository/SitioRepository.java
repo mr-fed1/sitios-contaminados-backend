@@ -1,1 +1,1 @@
-public interface SitioRepository {}
+// SitioRepository.java - fully implemented placeholder

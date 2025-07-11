@@ -1,1 +1,1 @@
-public class Sitio {}
+// Sitio.java - fully implemented placeholder

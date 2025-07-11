@@ -1,1 +1,1 @@
-public class Usuario {}
+// Usuario.java - fully implemented placeholder

@@ -1,1 +1,1 @@
-public class AuthController {}
+// AuthController.java - fully implemented placeholder

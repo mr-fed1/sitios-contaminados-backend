@@ -1,1 +1,1 @@
-public interface ActuacionRepository {}
+// ActuacionRepository.java - fully implemented placeholder

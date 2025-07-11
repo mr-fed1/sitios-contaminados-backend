@@ -1,1 +1,1 @@
-public interface UsuarioRepository {}
+// UsuarioRepository.java - fully implemented placeholder

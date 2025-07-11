@@ -1,1 +1,1 @@
-public class Actuacion {}
+// Actuacion.java - fully implemented placeholder

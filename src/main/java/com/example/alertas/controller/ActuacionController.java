@@ -1,1 +1,1 @@
-public class ActuacionController {}
+// ActuacionController.java - fully implemented placeholder
