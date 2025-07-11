@@ -10,29 +10,19 @@
 
   <properties>
     <java.version>17</java.version>
-    <spring-boot.version>3.2.5</spring-boot.version>
+    <spring.boot.version>3.2.5</spring.boot.version>
   </properties>
-
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-dependencies</artifactId>
-        <version>${spring-boot.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
 
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
+      <version>${spring.boot.version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-mongodb</artifactId>
+      <version>${spring.boot.version}</version>
     </dependency>
   </dependencies>
 
@@ -41,7 +31,7 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
-        <version>${spring-boot.version}</version>
+        <version>${spring.boot.version}</version>
         <configuration>
           <mainClass>com.example.alertas.Application</mainClass>
         </configuration>
@@ -56,4 +46,3 @@
     </plugins>
   </build>
 </project>
-

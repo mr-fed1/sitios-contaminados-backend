@@ -1,0 +1,4 @@
+com\example\alertas\Application.class
+com\example\alertas\model\Actuacion.class
+com\example\alertas\repository\ActuacionRepository.class
+com\example\alertas\controller\ActuacionController.class
