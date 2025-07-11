@@ -3,6 +3,8 @@ package com.example.alertas.controller;
 import com.example.alertas.model.Usuario;
 import com.example.alertas.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
@@ -15,10 +17,11 @@ public class AuthController {
     private UsuarioRepository usuarioRepository;
 
  @PostMapping("/login")
-public String login(@RequestBody Usuario request) {
-    return usuarioRepository.findByUsernameAndPassword(request.getUsername(), request.getPassword())
-            .map(user -> "Login OK")
-            .orElse("Credenciales inválidas");
+public ResponseEntity<String> login(@RequestBody Usuario usuario) {
+    return usuarioRepository.findByUsernameAndPassword(usuario.getUsername(), usuario.getPassword())
+            .map(user -> ResponseEntity.ok("Login OK"))
+            .orElse(ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Credenciales inválidas"));
 }
+
 }
 
